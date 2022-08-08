@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<head>
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='styles/account_details.css') }}">
+</head>
+
+<body class="body">
+
+    <div class = "canvas">
+        
+        <div class="content"> 
+            <h1 style="text-decoration: underline; ">Account Details</h1>
+        </div>
+
+        <div class="cornerCanvas">
+
+            <table>
+                <tr>
+                    <td>
+                        <img class = "image" src="{{url_for('static', filename='images/image5.png')}}">
+                    </td>
+                    <td>
+                        <div class="profile">
+                            <h2>Net Worth:</h2>
+                            <h3>$10,500</h3>
+                            <h4 class="green">+4.8% than last week</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p><span>$0</span> <span style="margin-left: 500px;">$5,000</span></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="asOf">
+                            <p>As Of:</p>
+                            <p>11/30/2021 @4:30pm (ET)
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="btn-box" style="display: inline-block; width: 100%;">
+            <div style="float: left;">
+                <a href="/account_details" class="btn-content">Add New Accounts</a>
+            </div>
+            <div style="float: right;">
+                <a href="/account_details" class="btn-content">Add New Saving Goal</a>
+            </div>
+        </div>
+
+        <div class="cornerCanvas">
+
+            <table class="table">
+                <div style="margin-top: 10px;"></div>
+                <thead>
+                  <tr>
+                    <th>  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> </th>
+                    <th scope="col">Financial Institution</th>
+                    <th scope="col">Account Type</th>
+                    <th scope="col">Account Balance</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> </th>
+                    <td scope="row">Chase <br> ****1234</td>
+                    <td>Checking</td>
+                    <td>$120.80</td>
+                    <td>
+                        <span style="margin-left: 16px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                              </svg>
+                        </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> </th>
+                    <td scope="row">Capital One <br> ****1234</td>
+                    <td>Checking</td>
+                    <td>$10.80</td>
+                    <td>
+                        <span style="margin-left: 16px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                              </svg>
+                        </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> </th>
+                    <td scope="row">TD Bank <br> ****1234</td>
+                    <td>Credit Card</td>
+                    <td>$50.80</td>
+                    <td>
+                        <span style="margin-left: 16px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                              </svg>
+                        </span>
+                       
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </div>
+
+    </div>
+</body>
+{% endblock %}

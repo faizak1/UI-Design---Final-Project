@@ -1,0 +1,63 @@
+.canvas{
+    width: 86%;;
+    margin: auto;
+}
+
+.content{
+    text-align: center;
+}
+
+.cornerCanvas {
+    border-radius: 25px;
+    height: auto;  
+    background: whitesmoke;
+    margin: 10px;
+    width: auto;
+    box-shadow: 2px 2px 8px #3db48bc2;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-content{
+    padding: 8px 40px; 
+    text-align: center;
+    margin: 15px;
+    cursor: pointer;
+    border-width: 0px;
+    background: #479e97;
+    border-radius: 50px;  
+    font-size: large;
+    color: white;
+    box-shadow: 2px 2px 8px #3db48bc2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-content:hover{
+    background: #3f3cf1d0;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-box{
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.profile{
+    margin-left: 20px;
+}
+
+.asOf{
+    margin-left: 100px;
+}
+
+.progress{
+    height: 20px;
+}
+
+.green{
+    color: green;
+}

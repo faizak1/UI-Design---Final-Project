@@ -1,0 +1,48 @@
+.table{
+    margin: auto;
+    width: auto;
+    border: grey;
+    border-width: 1px;
+    padding-bottom: 20px;
+}
+
+
+.chart-title{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color:rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.chart-button{
+    font-size: 15px; 
+    font-weight: bold; 
+    color:darkcyan; 
+
+}
+
+.chart-button:hover{
+    color:tomato;
+    cursor: pointer;
+}
+
+.canvas{
+    width: 40%;;
+    margin: auto;
+    text-align: center;
+}
+
+.chart-container{
+    text-align: center;
+}
+
+
+.cornerCanvas {
+    border-radius: 25px;
+    height: auto;  
+    background: whitesmoke;
+    margin: 10px;
+    width: auto;
+    box-shadow: 2px 2px 8px #3db48bc2;
+    text-align: center;
+}

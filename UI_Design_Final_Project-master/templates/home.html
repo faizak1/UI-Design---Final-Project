@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">                
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+        
+        <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='styles/home.css') }}">
+    </head>
+
+    <body class="body">
+
+        <div class = "canvas">
+                
+            <!-- title -->
+            <div>
+                <h1 class="title">Personal Finance Tracker</h1>
+                <h2 class="subtitle">WELCOME TO PERSONAL FINANCE TRACKER!</h2>
+            </div>
+
+            <table class="table">
+                
+                <tr>
+                  <td class = "slot">
+                      <img class = "image" src="{{url_for('static', filename='images/image1.png')}}">
+                      <br>
+                      <p>Plan and manage your budget across various <br> categories (food, utilities, accessories, etc)</p>
+                    </td>
+                  <td class = "login">
+                    <a href="/login"><button type="button" class="btn btn-primary" >Log In / Sign Up</button></a>
+                    </td>
+                  <td class = "slot">
+                      <img class = "image" src="{{url_for('static', filename='images/image3.png')}}">
+                      <br>
+                      <p>Link your bank accounts to manage expenses <br> and view transactions </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "slot">
+                        <img class = "image" src="{{url_for('static', filename='images/image2.png')}}">
+                        <br>
+                        <p>Enter your cash expenses</p>
+                    </td>
+                    <td class = "signup">
+                        <!-- <button type="button" class="btn btn-danger">Sign Up</button> -->
+                    </td>
+                    <td class = "slot">
+                        <img class = "image" src="{{url_for('static', filename='images/image4.png')}}">
+                        <br>
+                        <p>Watch your credit score increase as you become <br> an expert at managing your personal finances!</p>
+                    </td>
+                </tr>
+            </table>
+      
+        </div>
+    </body>
+</html>

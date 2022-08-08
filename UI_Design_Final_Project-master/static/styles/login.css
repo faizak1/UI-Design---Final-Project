@@ -1,0 +1,94 @@
+.body{
+    background-color: rgb(219, 255, 239);
+}
+
+.block{
+    display: inline-block;
+}
+
+.title{
+    font-family: 'Sacramento'; 
+    font-size: 80px;
+}
+
+.subtitle{
+    text-decoration: underline;
+}
+
+.canvas{
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.table{
+    margin: 0 auto;
+}
+
+.slot{
+    padding: 40px;
+    text-align: center;
+}
+
+.vertical-bar{
+    width:0.5px;
+    background-color: black;
+}
+
+.image{
+    height: 200px;
+    object-fit: contain;
+}
+
+.input-label{
+    padding-top: 10px;
+}
+
+.btn{
+    padding: 8px 40px; 
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    border-width: 0px;
+    background: #08865ad0;
+    border-radius: 50px;  
+    font-size: large;
+    color: white;
+    box-shadow: 2px 2px 8px #3db48bc2;
+}
+
+.btn:hover{
+    background: #3f3cf1d0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+h2{
+    text-shadow: 2px 2px 8px #3db48bc2;
+}
+
+.forget{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.forget:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.input-box{
+    width: 200px;
+    height: 30px;
+    border: 0;
+}

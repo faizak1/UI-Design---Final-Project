@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <!-- <link href="static/bootstrap.min.css" rel="stylesheet" media="screen"> -->              
+        
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='styles/login.css') }}">
+  </head>
+
+  <body class="body">
+
+      <div class = "canvas">
+            
+          <!-- title -->
+          <div>
+              <h1 class="title">Personal Finance Tracker</h1>
+          </div>
+
+          <table class="table">
+                
+              <tr>
+                <td class = "slot">
+                    <h2>LOG IN</h2>
+                    <form action="/display_dashboard" method="GET">
+                      <div class="input-label">Username</div>
+                      <input type="text" class="input-box" placeholder="Username" name="username" value="{{
+                        request.form.username }}">
+                      <br>
+                      <div  class="input-label">Password</div>
+                      <input type="password" class="input-box" placeholder="Password" name="password" value="{{
+                        request.form.password }}">
+                      <br>
+                      <div class="forget"> Forget Your Password? </div>
+                      <a href="/display_dashboard" class="btn">LOG IN</a>
+                    </form>
+                </td>
+                <td class="vertical-bar"></td>
+                <td class = "slot">
+                  <h2>DON'T HAVE AN ACCOUNT?</h2>
+                  <p>Create account to use our <br> convenient site features</p>
+                  <a href="/signup" class="btn">SIGN UP</a>
+                </td>
+              </tr>
+            </table>
+      
+        </div>
+  </body>
+
+</html>
